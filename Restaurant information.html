@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>RestaurantInformation</title>
+      <script type="text/javascript" src='Restaurant information.js'></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+      <div class="d-flex align-items-center">
+            <div class="col-sm"> 
+            </div>
+                  <div class="col-sm" style="text-align: center;">
+                        <a href="index.html" title="回首頁">
+                              <img src="https://d1gpbxqmt7wq2i.cloudfront.net/asset/mobile/images/logo/logo_moments_zh.png"width="200">
+                        </a>
+                  </div>
+                  <div class="col-sm" style="text-align: right;">
+                              
+                  </div>
+      </div>
+            <div style="text-align: center;color: black;font-weight: bold;">餐廳資訊</div><p></p>
+                  <div class="container mb-2">
+                        <div class="row">
+                              <div class="col-sm" style="text-align: center;font-weight: bold;font-size:20px;color: gray;">
+                                    訂位
+                              </div>
+                  <div class="col-sm" style="text-align: center;font-weight: bold;font-size:20px;background-color: rgb(248, 120, 29);color: white;">
+                        資訊
+                  </div>
+                              <div class="col-sm" style="text-align: center;font-weight: bold;font-size:20px;color: gray;">
+                              評論
+                              </div>
+                        </div>
+                  </div>
+            <div class="row">
+                  <div class="col-sm" style="text-align: center;">
+                        <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/1200px-McDonald%27s_logo.svg.png"style="width:60%;height: 500px;">
+                  </div>
+            </div><p></p>
+
+            <div class="container mb-2">
+                  <div class="row">
+                        <div class="col-4 sm" style="font-weight: bold;font-size:24px;color: rgb(0, 0, 0);">
+                        <span id="name">麥當勞</span>
+                        </div>
+                        <div class="col-sm" style="text-align: right;">
+                              <button id="follow" type="button" class="btn btn-outline-danger" value="follow" onclick="follow()">加入最愛餐廳名單💕</button>
+                        </div>
+                  </div>
+            </div>
+            <div class="container">
+                  <div class="row">
+                        <div class="col-sm">
+                              <button type="button"  style="color:black;background-color:rgb(248, 120, 29) ;width: 100%;font-size: 24px;color: white;border-radius: 10px;">我要訂位</button>
+                        </div> 
+                  </div>
+            </div><p></p><p></p>
+            <div class="container">
+                        <div class="row">
+                              <div class="col-sm" style="font-weight: bold;font-size:18px;color: rgb(255, 153, 0);">
+                              專屬優惠
+                              </div>
+                        </div>
+            </div>
+            <div class="container">
+                        <div class="row">
+                              <div class="col-sm" style="font-size:14px;color: black;margin-top: 10px;">
+                              EZCASH紅利回饋<br></br> 享5%折扣
+                              </div>
+                        </div>
+            </div>
+                  <p></p>
+                  <div class="container">
+                              <div class="row">
+                                    <div class="col-sm" style="text-align: left;font-weight: bold;font-size:18px;color: rgb(255, 153, 0);">
+                                          餐廳地點
+                                          <div class="col-sm" style="text-align: right;">
+                                                <button id="openmap"type="button" class="btn btn-outline-info">查看地圖</button>
+                                          </div>
+                                    <div id="mapframe">
+                                          <img src="png/map.PNG" width="80%";>
+                                    </div>
+
+                                    </div>
+                                    
+                              </div>
+                  </div>
+                  <p></p>
+            <div class="container">
+                  <div class="row">
+                        <div class="col-sm" style="font-size:14px;color: black;margin-top: 10px;">
+                        地址：
+                        <span style="color: rgb(65, 61, 61);">高雄市各大分店</span>
+                        </div>
+                  </div>
+            </div>
+                  <p></p>
+            <div class="container">
+                  <div class="row">
+                              <div class="col-sm" style="text-align: left;font-weight: bold;font-size:18px;color: rgb(255, 153, 0);">
+                              推薦菜色 <p></p>
+                              <div>
+                                    <select id="Readmenu"type="select" class="custom-select-sm" >
+                                          <option value="1">隐藏推薦菜單</option>
+                                          <option value="2">閱讀推薦菜單</option>
+                                    </select>
+                                    <div id ="menu" class="container pt-1">
+                                                <div class="row">
+                                                  <div class="col-4">
+                                                            <img src='png/菜單01.PNG' height="213px" width="350px">
+                                                  </div>
+                                                  <div class="col-4">
+                                                            <img src='png/菜單02.PNG'height="213px" width="350px">
+                                                  </div>
+                                                  <div class="col-4">
+                                                            <img src='png/菜單03.PNG'height="213px" width="350px">
+                                                  </div>
+                                                </div>
+                                    </div>
+                                    
+                              </div>
+                             
+                  </div>
+            </div>
+            <p></p>
+            <div class="container ">
+                  <div class="row">
+                        <div class="col-sm" style="font-weight: bold;font-size:18px;color: rgb(255, 153, 0);">
+                              聚餐類型
+                        </div>
+                  </div>
+            </div>
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-sm" style="font-size:14px;color: black;margin-top: 10px;">
+                              朋友聚餐/生日聚餐/開會聚餐/單純吃飯
+                              </div>
+                        </div>
+                  </div>
+                  <p></p>
+                  
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-sm" style="font-weight: bold;font-size:18px;color: rgb(255, 153, 0);">
+                              餐廳資訊
+                              </div>
+                        </div>
+                  </div>
+                  <p></p>
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-sm" style="font-weight: bold;font-size:18px;color: rgb(255, 153, 0);">
+                              營業時間
+                              </div>
+                        </div>
+                  </div>
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-sm" style="font-size:14px;color: black;margin-top: 10px;">
+                              平日：AM6:00-PM12:00hr<br></br>
+                              假日：24hr
+                              </div>
+                        </div>
+                  </div>
+                  <p></p>
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-sm" style="font-weight: bold;font-size:18px;color: rgb(255, 153, 0);">
+                              服務面面俱到 <p></p>
+                              <span style="color: rgb(71, 66, 66);font-size:14px;">優質環境高級餐點聚餐同樂皆宜</span>
+                              </div>
+                        </div>
+                  </div>
+                  <p></p>
+                  <div class="container"> 
+                        <div class="row">
+                              <div class="col-sm" style="font-weight: bold;font-size:18px;color: rgb(255, 153, 0);">
+                              餐廳描述
+                              </div>
+                        </div>
+                  </div>
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-sm " style="font-size:14px;color: rgb(58, 55, 55);">
+                                    麥當勞是全世界最大的快速餐飲服務餐廳領導品牌。1955年，世界第一家麥當勞由創始人Ray A. Kroc在美國芝加哥Elk Grove Village成立，金黃拱門下的美味漢堡和親切服務，立刻受到各界人士的歡迎；現在，全球有超過36,000家餐廳，遍及超過100個國家地區，為顧客提供超值美味的麥當勞餐飲。
+                                    麥當勞以品質、服務、衛生與超值（Quality、Service、Cleanliness、Value）等核心價值廣獲消費者的支持，並長期深耕台灣。1984年1月28日，麥當勞在台灣成立第一家餐廳，近年來，台灣麥當勞持續創新服務，推出快速便利的「得來速」、「24小時營業」餐廳、新型態「McCafé」與「為你現做」等服務。2010年起，導入麥當勞亞太區全新設計風格，不只滿足顧客的味蕾，也將服務提升至感官美學享受，提供顧客美學風格、美感服務、美味多元的美學饗宴。
+                              </div>
+                        </div>
+                  </div>
+                  <div class="mt-5" style="background-color:rgb(24, 22, 22);">
+                  <div class="container">
+                              <div class="row">
+                                    <div class="col-12 col-md-8">
+                                    <ul class="nav justify-content-left">
+                                          <ul class="nav">
+                                          <li class="nav-item">
+                                          <a class="nav-link " href="#">關於</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" href="#">人才</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" href="#">BLOG</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" href="#">服務條款</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" href="#">隱私權政策</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" href="#">餐廳合作</a>
+                                          </li>
+                                          </ul>
+                                    </ul>
+                              </div>
+                        <div class="col12 col-md-2"></div>
+                              <div class="col12 col-md-2">
+                                    <div class="d-flex align-items-center">
+                                          <div class="col-sm">
+                                                <div class="dropdown">
+                                                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            選擇分類
+                                                      </button>
+                                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#">其實沒有東西</a>
+                                                            <a class="dropdown-item" href="#">嚇到了吧～</a>
+                                                            <a class="dropdown-item" href="#">～ˇ～</a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="container">
+                              <div class="row">
+                                          <div class="col">
+                                          </div>
+                                          <div class="col"style="color:rgb(221, 170, 75)";>
+                                          <h6> 台北市信義區基隆路一段178號5樓</h6>
+                                          </div>
+                                          <div class="col">
+                                          </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="container">
+                              <div class="row">
+                                          <div class="col">
+                                          </div>
+                                          <div class="col-12 col-md-3"style="color:rgb(221, 170, 75)";>
+                                          <h6> taiwan@eztable.com</h6>
+                                          </div>
+                                          <div class="col">
+                                          </div>
+                                          </div>
+                              </div>
+                                          <div class="container">
+                                                <div class="row">
+                                                <div class="col">
+                                                </div>
+                                                <div class="col-5"style="color:rgb(221, 170, 75)";>
+                                                <p class="h6">週一至週四 10:00 至 19:00，週五 10：00 至 18：00</p>
+                                                </div>
+                                                <div class="col">
+                                                </div>
+                                          </div>
+                              </div> 
+                  </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+
+</body>
+</html>

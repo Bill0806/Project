@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Favorite List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="Favorite.js"></script>
+</head>
+<body>
+        
+        <!--我是LOGO -->
+        <div class="d-flex align-items-center" style="height: 100px;">
+                <div class="col-sm">
+                        <input type="button" id="bt1" value="檢視已追蹤餐廳" class="btn btn-outline-info btn-sm">
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                              <img src="https://d1gpbxqmt7wq2i.cloudfront.net/asset/mobile/images/logo/logo_moments_zh.png"width="200">
+                </div>
+                <div class="col-sm" style="text-align: right;">
+                         <button id="back" type="button" class="btn btn-outline-info btn-sm"; onclick="window.location='index.html'">返回首頁</button>
+                </div>
+        </div>
+        <!--我是標題 -->
+        <div class="d-flex align-items-center" >
+                <div class="col-sm">
+                </div>
+                <div class="col-sm" style="text-align: center;;font-size: 32px;font-weight: bolder;margin-top: 20px;margin-bottom:20px ;" >
+                                        最愛餐廳清單
+                </div>
+                <div class="col-sm" style="text-align: right;">
+                </div>
+        </div>
+        <!--我是清單 -->
+        <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                  </div>
+                  <div class="col-sm">
+                        <ul id="my-list" class="list-unstyled">
+                              </ul>
+                  </div>
+                </div>
+              </div>
+        
+        
+        <!-- <ul id="my-list" style="margin-left:25%;">
+                <li id="list" ;>
+                
+                        <div class="row ml-2">
+                                
+                                <div class="col-2 pt-2" style="text-align: right;">
+                                        <img src="https://media.bnextmedia.com.tw/image/album/2019-04/img-1554178414-23505.jpg" style="height: 150px;width: 150px;">
+                                </div>
+                                <div class="col-sm ml-5">
+                                        <div class="container">
+                                                <div class="row">
+                                                        <div class="col-sm" style="font-weight: bolder;;font-size: 28px">
+                                                        麥當勞
+                                                        </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-sm" style="color: grey;font-size: 18px;background-color: rgb(253, 216, 146);">
+                                                        感謝您的追蹤，餐廳新菜色，敬請期待！
+                                                        </div>
+                                                        </div>
+                                                <div class="row">
+                                                        <div class="col" style="color: grey;font-size: 18px;background-color: rgb(253, 216, 146);">
+                                                        您與9999位粉絲正在追蹤
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-sm">
+                                </div>
+                        </div>  
+                        
+                </li>        
+                <li id="list" style="padding-top: 10px;";>
+                
+                        <div class="row ml-2">
+                                
+                                <div class="col-2 pt-2" style="text-align: right;">
+                                        <img src="https://media.bnextmedia.com.tw/image/album/2019-04/img-1554178414-23505.jpg" style="height: 150px;width: 150px;">
+                                </div>
+                                <div class="col-sm ml-5">
+                                        <div class="container">
+                                                <div class="row">
+                                                        <div class="col-sm" style="font-weight: bolder;;font-size: 28px">
+                                                        麥當勞
+                                                        </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-sm" style="color: grey;font-size: 18px;background-color: rgb(253, 216, 146);">
+                                                        感謝您的追蹤，餐廳新菜色，敬請期待！
+                                                        </div>
+                                                        </div>
+                                                <div class="row">
+                                                        <div class="col" style="color: grey;font-size: 18px;background-color: rgb(253, 216, 146);">
+                                                        您與9999位粉絲正在追蹤
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-sm">
+                                </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-danger mt-1" id="disfollow" style="margin-left: 110px;">取消追蹤</button>  
+                </li>        
+                <li id="list" style="padding-top: 10px;" ;>
+                
+                        <div class="row ml-2">
+                                
+                                <div class="col-2 pt-2" style="text-align: right;">
+                                        <img src="https://media.bnextmedia.com.tw/image/album/2019-04/img-1554178414-23505.jpg" style="height: 150px;width: 150px;">
+                                </div>
+                                <div class="col-sm ml-5" >
+                                        <div class="container">
+                                                <div class="row">
+                                                        <div class="col-sm" style="font-weight: bolder;;font-size: 28px">
+                                                        麥當勞
+                                                        </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-sm" style="color: grey;font-size: 18px;background-color: rgb(253, 216, 146);">
+                                                        感謝您的追蹤，餐廳新菜色，敬請期待！
+                                                        </div>
+                                                        </div>
+                                                <div class="row">
+                                                        <div class="col" style="color: grey;font-size: 18px;background-color: rgb(253, 216, 146);">
+                                                        您與9999位粉絲正在追蹤
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-sm">
+                                </div>
+                        </div>  
+                        <button type="button" class="btn btn-outline-danger mt-1 " id="disfollow" style="margin-left: 110px;">取消追蹤</button>
+                </li>        
+        </ul>                -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+
+</body>
+</html>

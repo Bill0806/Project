@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        
+                <div class="d-flex align-items-center">
+                  <div class="col-sm">
+                          <form name=data>
+                            <select name=test onChange=Javascript:changelist();> 
+                              <!--opChange=该事件发生时执行的 JavaScript-->
+                              <option value=0 selected>顯示之餐廳類別
+                              <option value=1>美式美食
+                              <option value=2>西式甜點
+                              <option value=3>義式餐點
+                              </select>                                                                          
+                              <div id=namelist></div>
+                          </form>
+                  </div>
+                  <div class="col-sm" style="text-align: center;">
+                                <img src="https://d1gpbxqmt7wq2i.cloudfront.net/asset/mobile/images/logo/logo_moments_zh.png"width="200">
+                  </div>
+                  <div class="col-sm" style="text-align: right;">
+                                <button id="favorite" type="button" class="btn btn-outline-light btn-danger"; onclick="window.location='favorite.html'">最愛餐廳</button>
+                  </div>
+                </div>
+             
+
+                    <div style="background-color: rgb(247, 157, 55);height:352px;width: 100%;position: relative;">
+                      <div style="position: absolute;top:25%;left:25%">
+                        <div class="container" style="width: 800px;">
+                          <div class="row">
+                              <div class="col-sm">
+                              </div>
+                              <div class="col-sm" >
+                                  <div class="box">
+                                        <input type="text" id="ipt" placeholder="請輸入關鍵字">
+                                  </div>
+                                  <div class="item-box" id="item-box">
+                                  </div>
+                              </div>
+                              <div class="col-sm">
+                              </div>
+                          </div>
+                        </div>
+                      </div>                    
+                    </div>
+
+                    <div class="container mb-5 mt-3";>
+                            <div class="row">
+                              <div class="col">
+                                    <h1 class="display-4">Kaohsiung City美食</h1>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col" style="padding:20px;">
+                                <div class="card" style="width: 18rem;">
+                                  <a href="Restaurant information.html" title="即將前往麥當勞">
+                                  <img class="card-img-top" src="https://media.bnextmedia.com.tw/image/album/2019-04/img-1554178414-23505.jpg" alt="Card image cap" height="286px">
+                                  </a>
+                                  <div class="card-body">
+                                    <p class="card-text">麥當勞</p>
+                                    <div style="color: #666666;font-size:8px;">$-美式美食</div>
+                                    <div>
+                                      <span class="badge badge-light">10-20分鐘</span>  <span class="badge badge-light">4.7(500+)</span><p></p><span class="badge badge-light">15.00TWD費用</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col" style="padding:20px;">
+                                <div class="card" style="width: 18rem;">
+                                  <a href="https://www2.kfcclub.com.tw/tw/?gclid=CjwKCAiAzanuBRAZEiwA5yf4upwqLbov9BJMrKRj0e8QuhfaLWQBbRdz_cxmocbigH4y4i5o0DTyzxoCJhUQAvD_BwE" title="即將前往肯德基">
+                                  <img class="card-img-top" src="https://www.mirrormedia.com.tw/assets/images/20190115091118-cde2982e382bc9c6c18ba229501706b8-mobile.jpg" alt="Card image cap" height="286px">
+                                  </a>
+                                  <div class="card-body">
+                                    <p class="card-text">肯德基</p>
+                                    <div style="color: #666666;font-size:8px;">$-美式美食</div>
+                                    <div>
+                                      <span class="badge badge-light">10-20分鐘</span>  <span class="badge badge-light">4.7(500+)</span><p></p><span class="badge badge-light">15.00TWD費用</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col"style="padding:20px;">
+                                <div class="card" style="width: 18rem;">
+                                  <a href="https://www.fatdfc.com/" title="即將前往胖老爹">
+                                  <img class="card-img-top" src="https://static.wixstatic.com/media/8c346f_d03c191a8df747a9a8ae4f8c68836a89~mv2.jpg/v1/fit/w_2500,h_1330,al_c/8c346f_d03c191a8df747a9a8ae4f8c68836a89~mv2.jpg" alt="Card image cap" height="286px">
+                                  </a>
+                                  <div class="card-body">
+                                    <p class="card-text">胖老爹</p>
+                                    <div style="color: #666666;font-size:8px;">$-美式美食</div>
+                                    <div>
+                                      <span class="badge badge-light">10-20分鐘</span>  <span class="badge badge-light">4.7(500+)</span><p></p><span class="badge badge-light">15.00TWD費用</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row pl-1">
+                              <div class="col" style="padding:20px;">
+                                <div class="card" style="width: 18rem;">
+                                  <a href="https://mable.tw/blog/post/blooming" title="即將前往聽見花開咖啡館">
+                                  <img class="card-img-top" src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/19247941_657547661087074_5132057747128426083_n.jpg?_nc_cat=111&_nc_oc=AQmP_yr0Z6ykJ9qXvfy1EjYO9hnsFynrf9TdYKNtFvaxQOW3bIVSoSSqoEKXthkBVko&_nc_ht=scontent.fkhh1-2.fna&oh=5058927425ea3c1f61158f66161281a9&oe=5E42B388" alt="Card image cap" height="286px">
+                                </a>
+                                  <div class="card-body">
+                                    <p class="card-text">聽見花開咖啡馆</p>
+                                    <div style="color: #666666;font-size:8px;">$-西式甜點</div>
+                                    <div>
+                                      <span class="badge badge-light">10-15分鐘</span>  <span class="badge badge-light">4.9(500+)</span><p></p><span class="badge badge-light">30.00TWD費用</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col" style="padding:20px;">
+                                <div class="card" style="width: 18rem;">
+                                  <a href="https://w0973320589.pixnet.net/blog/post/466427084" title="即將前往觅时蜜食">
+                                  <img class="card-img-top" src="https://pic.pimg.tw/w0973320589/1543781136-2759379552_n.jpg" alt="Card image cap"  height="286px">
+                                 </a>
+                                  <div class="card-body">
+                                    <p class="card-text">觅时蜜食</p>
+                                    <div style="color: #666666;font-size:8px;">$-西式甜點</div>
+                                    <div>
+                                      <span class="badge badge-light">10-15分鐘</span>  <span class="badge badge-light">4.9(500+)</span><p></p><span class="badge badge-light">30.00TWD費用</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col " style="padding:20px;">
+                                <div class="card" style="width: 18rem;">
+                                  <a href="https://jumptiger22.pixnet.net/blog/post/222572103-%E4%BC%B4%E5%92%96%E5%AE%B6" title="即將前往伴珈家">
+                                  <img class="card-img-top" src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/71029537_1298660996981755_3654327710680875008_n.jpg?_nc_cat=104&_nc_oc=AQljj1Dl6odUNKj13cYKAGL6Vuu6l4CwIE5iILYKeO3bGW5nldQR4IuyJ39HCBIZaM0&_nc_ht=scontent.fkhh1-2.fna&oh=9c3ec26bd45d08c263720b75ad646d6e&oe=5E52503A" alt="Card image cap" height="286px">
+                                  </a>
+                                  <div class="card-body">
+                                    <p class="card-text">伴珈家</p>
+                                    <div style="color: #666666;font-size:8px;">$-西式甜點</div>
+                                    <div>
+                                    <span class="badge badge-light">10-15分鐘</span>  <span class="badge badge-light">4.9(500+)</span><p></p><span class="badge badge-light">30.00TWD費用</span>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mt-3 ">
+                              <div class="col " style="padding:20px;">
+                                <div class="card" style="width: 18rem;">
+                                  <a href="https://www.grazie.com.tw/" title="即將前往古拉爵">
+                                  <img class="card-img-top" src="https://cdn.walkerland.com.tw/images/upload/poi/p31761/m36235/f39c920610560d6f1afb4c44372ee71e97a4e849.jpg" height="286px";>
+                                  </a>
+                                  <div class="card-body">
+                                    <p class="card-text">古拉爵</p>
+                                    <div style="color: #666666;font-size:8px;">$-義式餐點</div>
+                                    <div>
+                                      <span class="badge badge-light">20-25分鐘</span>  <span class="badge badge-light">4.8(500+)</span><p></p><span class="badge badge-light">45.00TWD費用</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col " style="padding:20px;">
+                                <div class="card" style="width: 18rem;">
+                                  <a href="https://lintzuyang79.pixnet.net/blog/post/346904542" title="即將前往帕狄尼諾">
+                                  <img class="card-img-top" src="http://image.yes123.com.tw/enterprise_pict/p2/38/38669636_2016615_81890.jpg" height="286px";>
+                                  </a>
+                                  <div class="card-body">
+                                    <p class="card-text">帕狄尼諾</p>
+                                    <div style="color: #666666;font-size:8px;">$-義式餐點</div>
+                                    <div>
+                                      <span class="badge badge-light">20-25分鐘</span>  <span class="badge badge-light">4.8(500+)</span><p></p><span class="badge badge-light">45.00TWD費用</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col" style="padding:20px;"  >
+                                <div class="card" style="width: 18rem;">
+                                  <a href="https://kirasweet4ever.pixnet.net/blog/post/436049365" title="即將前往波隆那">
+                                  <img class="card-img-top" src="https://pic.pimg.tw/marsven/1545653440-2697648173.jpg" height="286px";>
+                                  </a>
+                                  <div class="card-body">
+                                    <p class="card-text">波隆那</p>
+                                    <div style="color: #666666;font-size:8px;">$-義式餐點</div>
+                                    <div>
+                                    <span class="badge badge-light">20-25分鐘</span>  <span class="badge badge-light">4.8(500+)</span><p></p><span class="badge badge-light">45.00TWD費用</span>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                          
+                         
+                          <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                        <div style="background-color:rgb(24, 22, 22);">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-12 col-md-8">
+                                      <ul class="nav justify-content-left">
+                                        <ul class="nav">
+                                          <li class="nav-item">
+                                            <a class="nav-link " href="#">關於</a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="#">人才</a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="#">BLOG</a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="#">服務條款</a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" href="#">隱私權政策</a>
+                                            </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#">餐廳合作</a>
+                                          </li>
+                                        </ul>
+                                      </ul>
+                                  </div>
+                                  <div class="col12 col-md-2"></div>
+                                  <div class="col12 col-md-2">
+                                      <div class="d-flex align-items-center">
+                                          <div class="col-sm">
+                                                <div class="dropdown">
+                                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                          選擇分類
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                          <a class="dropdown-item" href="#">其實沒有東西</a>
+                                                          <a class="dropdown-item" href="#">嚇到了吧～</a>
+                                                          <a class="dropdown-item" href="#">～ˇ～</a>
+                                                        </div>
+                                                      </div>
+                                      </div>
+                                  </div>
+                                </div>
+                          </div>
+                            
+                          <div class="container">
+                              <div class="row">
+                                        <div class="col">
+                                        </div>
+                                        <div class="col"style="color:rgb(221, 170, 75)";>
+                                           <h6> 台北市信義區基隆路一段178號5樓</h6>
+                                        </div>
+                                        <div class="col">
+                                        </div>
+                                      </div>
+                              </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                          <div class="col">
+                                          </div>
+                                          <div class="col-12 col-md-3"style="color:rgb(221, 170, 75)";>
+                                             <h6> taiwan@eztable.com</h6>
+                                          </div>
+                                          <div class="col">
+                                          </div>
+                                        </div>
+                                </div>
+                              
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col">
+                                      </div>
+                                      <div class="col-5"style="color:rgb(221, 170, 75)";>
+                                          <p class="h6">週一至週四 10:00 至 19:00，週五 10：00 至 18：00</p>
+                                      </div>
+                                      <div class="col">
+                                      </div>
+                                    </div>
+                              </div> 
+                              
+                          </div>
+                             
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+</body>
+</html>
