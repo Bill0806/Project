@@ -7,13 +7,28 @@ window.onload = function(){
           let val = e.target.value;
           let arr = [];
           for(let i = 0;i<datas.length;i++){
+            //   toString 將數字轉為字串 indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置。如果没有找到匹配的字符串则返回 -1。
                if(datas[i].toString().indexOf(val.toString())!=-1){
                    arr.push(datas[i])
+                
                }
+            let search = document.getElementById('search');
+            search.addEventListener('click',function(){
+                if (datas[i]=="麥當勞"){
+                    window.location.href="file:///C:/Users/user/Desktop/Project/MCD.html";
+                    document.getElementById('ipt').value='';
+                }
+                else{
+                    window.location.href="file:///C:/Users/user/Desktop/Project/KFC.html";
+                    document.getElementById('ipt').value='';
+                }
+            },false)
+            
           }
           itemBox.innerHTML = '';
           createList(arr);
       });
+    //   將Data裡的資料再放回到itembox
       function createList(datas){
           for(let i = 0;i<datas.length;i++){
               let newDom = document.createElement("div");
@@ -27,7 +42,7 @@ window.onload = function(){
 changelist();
         function changelist()
         {
-              switch(document.data.test.value)
+              switch(document.data.list.value)
               {
                     case "1":
                     document.all.namelist.innerHTML="<ul><li><button><option value=1>麥當勞</button></li><li><button><option value=2>肯德基</button></li><li><button><option value=3>胖老爹</button></li></ul>"
