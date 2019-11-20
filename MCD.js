@@ -26,6 +26,11 @@ window.onload = function(){
                   obj_map.style.display = "none" ;
             }
       },false);
+
+      // obj.rest1=[
+      //       name=document.getElementById('name').value
+      // ]
+      
 }
 
 function follow()  
@@ -35,3 +40,5 @@ function follow()  
                   var myurl="Favorite.html"+"?"+"parm1="+parm1;  
                   window.location.assign(encodeURI(myurl));  
              }
+ 
+   

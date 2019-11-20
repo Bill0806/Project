@@ -1,0 +1,76 @@
+.footer {
+    height: 250px;
+    background: url(https://d1gpbxqmt7wq2i.cloudfront.net/asset/mobile/images/pattern_bg.png), #333;
+    color: #999;
+    font-size: 14px;
+    overflow: hidden;
+    max-height: 500px;
+    opacity: 1.95;
+    }
+    
+    .footer-wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+    }
+    .footer-nav {
+    display: block;
+    }
+    .lang-selector-wrap {
+    margin-top:25px;
+    float: right;
+    width: 180px;
+    }
+    
+    .lang-selector {
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 0;
+    padding: 10px 24px 10px 54px;
+    background-color:rgba(138, 133, 133, 0.623) ;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 18px;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    }
+    option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    }
+    .footer-navlist {
+    text-align: left;
+    }
+    .footer-navlist li {
+    display: inline-block;
+    }
+    .navlink {
+    display: inline-block;
+    padding: 10px 8px;
+    color: #fff;
+    line-height: 20px;
+    font-size:14px;
+    }
+    .footer-content {
+    text-align: center;
+    line-height: 2;
+    border-top: 1px solid #666666;
+    padding-top: 20px;
+    }
+    .social-panel {
+    margin: 20px 0;
+    }
+    a {
+    color: #4A90E2;
+    text-decoration: none;
+    }
+    ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }

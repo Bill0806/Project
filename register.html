@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src='register.js'></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>會員註冊</title>
+</head>
+<body onload="initform()">
+<form name="register" method="get" action="Mindex.html">
+    <!-- 當表單提交時action 表單數據發送到指定url -->
+    <table width="800" align="center" class="mt-5" >
+        <tr>
+            <td width="150" class="pl-3"><a href="index.html"><img src="https://d1gpbxqmt7wq2i.cloudfront.net/asset/mobile/images/logo/logo_moments_zh.png" width="120" height="60"/></td></a>
+                <td bgcolor="#FF8800" colspan="2" align="center"><b>會員註冊</b></td>
+            </tr>
+            <tr>
+                <!-- colspan 跨三列的表格 -->
+            <td colspan="3" align="right" style="font-size: 14px;">務必填寫該使用者資訊</td>
+            </tr>
+            <tr height="20">
+            <td></td>
+            </tr>
+            <tr>
+            <td align="center"><b>使用者名稱:</b></td>
+            <!-- onblur 事件在離開输入框时執行 function  onfocus 事件在對象點擊时发生function。-->
+                <td width="250"><input type="text" name="username" id="username" onblur="checkUserName(username.value,'username_warn')" onfocus="clearWarn('username_warn')" /></td>
+                <td><div id="username_warn"><font color="#666666">六位數>name>二十位數(以字母開頭並與數字組成)</font></div></td>
+            </tr>
+            <tr height="20">
+            <td></td>
+            </tr>
+            <tr>
+            <td align="center"><b>密  碼:</b></td>
+                <td><input type="password" name="password" id="password" onblur="checkPassword(password.value,'pwd_warn')" onfocus="clearWarn('pwd_warn')" /></td>
+                <td><div id="pwd_warn"><font color="#666666">六位數>password>二十位數(由數字、字母組成)</font></div></td>
+            </tr>
+            <tr height="20">
+            <td></td>
+            </tr>
+            <tr>
+            <td align="center"><b>確認密碼:</b></td>
+                <td><input type="password" name="repwd" id="repwd" onblur="checkRePassword(repwd.value,'repwd_warn')" onfocus="clearWarn('repwd_warn')" /></td>
+                <td><div id="repwd_warn"><font color="#666666">請與上次輸入的密碼保持一致</font></div></div></td>
+            </tr>
+            <tr height="20">
+            <td></td>
+            </tr>
+            <tr>
+            <td align="center"><b>性  別:</b></td>
+                <td><input type="radio" name="chk_sex" value="0" />男&nbsp;&nbsp;<input type="radio" name="chk_sex" value="1" />女</td>
+                <td><div id="sex_warn"></div></td>
+            </tr>
+            <tr height="20">
+            <td></td>
+            </tr>
+            <tr>
+            <td align="center"><b>個人愛好:</b></td>
+                <td><input type="checkbox" name="habit" />運動
+                <input type="checkbox" name="habit" />電影
+                    <input type="checkbox" name="habit" />音樂
+                    <input type="checkbox" name="habit" />美食
+                </td>
+                <td></td>
+            </tr>
+            <tr height="20">
+            <td></td>
+            </tr>
+            <tr>
+            <td align="center"><b>出生日期:</b></td>
+                <td><select name="year" size="1">
+                <script language="javascript" type="text/javascript">
+                var tmp_now = new Date();
+                // getFullYear() 方法可返回一个表示年份的 4 位数字
+                for(i=1950;i<=tmp_now.getFullYear();i++){
+                document.write("<option value='"+i+"'"+(i==tmp_now.getFullYear()-24?"selected":"")+">"+i+"</option>")
+                }
+                </script>
+                    </select>年
+                    <select name="month" size="1">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option>
+                    <option value="6">6</option><option value="7">7</option>
+                    <option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option><option value="11">11</option>
+                    <option value="12">12</option>
+                    </select>月
+                    <select name="day" size="1">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option>
+                    <option value="6">6</option><option value="7">7</option>
+                    <option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option><option value="11">11</option>
+                    <option value="12">12</option><option value="13">13</option>
+                    <option value="14">14</option><option value="15">15</option>
+                    <option value="16">16</option><option value="17">17</option>
+                    <option value="18">18</option><option value="19">19</option>
+                    <option value="20">20</option><option value="21">21</option>
+                    <option value="22">22</option><option value="23">23</option>
+                    <option value="24">24</option><option value="25">25</option>
+                    <option value="26">26</option><option value="27">27</option>
+                    <option value="28">28</option><option value="29">29</option>
+                    <option value="30">30</option><option value="31">31</option>
+                    </select>日
+                </td>
+                <td></td>
+            </tr>
+            <tr height="20">
+            <td></td>
+            </tr>
+            <tr>
+            <td align="center"><b>家庭住址:</b></td>
+                <td width="250"><input type="text" name="address" id="address" size="35" /></td>
+                <td><div id="address_warn"><font color="#666666">請輸入詳細住家地址</font></div></td>
+            </tr>
+            <tr height="20">
+            <td></td>
+            </tr>
+            <tr>
+            <td align="center"><b>電子郵件:</b></td>
+                <td width="250"><input type="text" name="email" id="email" size="30" onblur="checkEmail(email.value,'email_warn')" onfocus="clearWarn('email_warn')" /></td>
+                <td><div id="email_warn"><font color="#666666">請輸入有效的郵件地址</font></div></td>
+            </tr>
+            <tr height="20">
+            <td></td>
+            </tr>
+            <tr>
+            <td align="center"><b>驗證碼:</b></td>
+                <td width="250"><input type="text" name="code" id="code" size="8" onblur="checkCode(code.value,'code_warn')" onfocus="clearWarn('code_warn')" />&nbsp;<input type="text" id="newcode" readonly="readonly" size="2" />&nbsp;<input type="button" value="重新整理" onclick="getCode()" /></td>
+                <td><div id="code_warn"><font color="#666666">請輸正確的驗證碼</font></div></td>
+            </tr>
+            <tr height="20">
+            <td></td>
+            </tr>
+            <tr>
+                <!-- &nbsp不換行空格 -->
+            <td colspan="2">&nbsp;&nbsp;<input type="checkbox" name="chk_accept" />閱讀以下協議並同意</td>
+                <td><div id="accept_warn"></div></td>
+            </tr>
+            <tr>
+            <td colspan="3">&nbsp;&nbsp;<input type="button" name="btn_submit"  class="btn btn-outline-secondary mb-2 mt-2" value="提交"  style='font-size: 14px;' onclick="checkInput()"/>
+                &nbsp;&nbsp;<input type="reset" name="reset" class="btn btn-danger mt-2 mb-2 "  style='font-size: 14px;' value="重新填寫"/>
+                </td>
+            </tr>
+            <tr>
+            <td colspan="3">
+                <textarea name="xieyi" rows="8" cols="120">
+ 一、總則
+1.1 使用者應當同意本協議的條款並按照頁面上的提示完成全部的註冊程式。使用者在進行註冊程式過程中點選"同意"按鈕即表示使用者與公司達成協議,完全接受本協議項下的全部條款。
+1.2 使用者註冊成功後,將給予每個使用者一個使用者帳號及相應的密碼,該使用者帳號和密碼由使用者負責保管;使用者應當對以其使用者帳號進行的所有活動和事件負法律責任。
+1.3 使用者一經註冊帳號,除非子頻道要求單獨開通許可權,使用者有權利用該帳號使用各個頻道的單項服務,當用戶使用各單項服務時,使用者的使用行為視為其對該單項服務的服務條款以及在該單項服務中發出的各類公告的同意。
+1.4 會員服務協議以及各個頻道單項服務條款和公告可隨時更新,且無需另行通知。您在使用相關服務時,應關注並遵守其所適用的相關條款。
+您在使用各項服務之前,應仔細閱讀本服務協議。如您不同意本服務協議及/或隨時對其的修改,您可以主動取消本協議提供的服務;您一旦使用服務,即視為您已瞭解並完全同意本服務協議各項內容,包括對服務協議隨時所做的任何修改,併成為使用者。
+
+                    </textarea>
+                </td>
+            </tr>
+        </table>
+</form>
+</body>
+</html>
