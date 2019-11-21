@@ -28,10 +28,24 @@ window.onload = function(){
       },false);
 }
 
-function follow()  
-              {  
-                  var parm1 = document.getElementById("follow").value;
-                  let parm2 = document.getElementById("name").value;
-                  var myurl="Favorite.html"+"?"+"parm1="+parm1;  
-                  window.location.assign(encodeURI(myurl));  
-             }
+// function follow()  
+//               {  
+//                   var parm1 = document.getElementById("follow").value;
+//                   let parm2 = document.getElementById("name").value;
+//                   var myurl="Favorite.html"+"?"+"parm1="+parm1;  
+//                   window.location.assign(encodeURI(myurl));  
+//              }
+
+ rest = [
+      restname = '肯德基',
+      restimg ='https://www.mirrormedia.com.tw/assets/images/20190115091118-cde2982e382bc9c6c18ba229501706b8-mobile.jpg',
+      restthx='感謝您追蹤肯德基，餐廳新菜色，敬請期待！'
+      ]
+
+
+// function locals()
+// {
+// localStorage.setItem('restname','肯德基');
+// localStorage.setItem('thx','感謝您追蹤肯德基，餐廳新菜色，敬請期待！');
+// window.location.href="Favorite.html";
+// }

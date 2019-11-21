@@ -33,12 +33,17 @@ window.onload = function(){
       
 }
 
-function follow()  
-              {  
-                  var parm1 = document.getElementById("follow").value;
-                  let parm2 = document.getElementById("name").value;
-                  var myurl="Favorite.html"+"?"+"parm1="+parm1;  
-                  window.location.assign(encodeURI(myurl));  
-             }
- 
+// function follow()  
+//               {  
+//                   var parm1 = document.getElementById("follow").value;
+//                   let parm2 = document.getElementById("name").value;
+//                   var myurl="Favorite.html"+"?"+"parm1="+parm1;  
+//                   window.location.assign(encodeURI(myurl));  
+//              }
+      function locals()
+      {
+      localStorage.setItem('restname02','麥當勞');
+      localStorage.setItem('thx02','感謝您追蹤麥當勞，餐廳新菜色，敬請期待！');
+      window.location.href="Favorite.html";
+      }
    
